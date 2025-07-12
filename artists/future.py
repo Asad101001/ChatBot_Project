@@ -2,7 +2,7 @@
 class Drake:
     def __init__(self):
         self.name = "Future"
-        self.genre = "Hip-Hop/Trap"
+        self.genre = "Hip-Hop, Trap, Mumble Rap"
         self.top_songs = ["Mask Off ", "Life is Good ft. Drake", "Low Life ft. The Weeknd"]
 
     def get_bio(self):
