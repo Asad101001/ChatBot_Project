@@ -1,18 +1,9 @@
-#Constructor used to create class
-class Drake:
+from .artists_base import ArtistBase
+
+class Travis(ArtistBase):
     def __init__(self):
-        self.name = "Travis Scott"
-        self.genre = "Hip-Hop/Trap/Psychedelic Rap"
-        self.top_songs = ["SICKO MODE", "goosebumps", "HIGHEST IN THE ROOM"]
-
-    def get_bio(self):
-        return f"{self.name} is a {self.genre} artist.\n \n"
-
-    def respond(self, query):
-        return self.get_bio()
-    
-    #Output objects using either display()/show() method
-    def display(self):
-        print(f"Artist : {self.name}")
-        print(f"Genre : {self.genre}")
-        print(f"Top 3 Most streamed songs : {self.top_songs}")
+        super().__init__(
+            "Travis Scott",
+            "Hip-Hop, Trap, Psychedelic Rap",
+            ["goosebumps ft. Kendrick Lamar", "SICKO MODE ft. Drake",  "Highest in the Room"]
+        )
